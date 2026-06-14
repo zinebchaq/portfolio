@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
-import linkedinIcon from '../../assets/icons/linkedin.png';
-import githubIcon from '../../assets/icons/github.png';
-import emailIcon from '../../assets/icons/mail.png';
+
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

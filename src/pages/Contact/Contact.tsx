@@ -4,10 +4,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import Button from '../../components/Button/Button';
 import styles from './Contact.module.css';
-import linkedinIcon from '../../assets/icons/linkedin.png';
-import githubIcon from '../../assets/icons/github.png';
-import emailIcon from '../../assets/icons/mail.png';
-import locationIcon from '../../assets/icons/location.png';
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({

@@ -16,7 +16,6 @@ const ProjectCard = ({
   description,
   technologies,
   image,
-  githubLink,
 }: ProjectCardProps) => {
   return (
     <div className={styles.card}>
