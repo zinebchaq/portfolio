@@ -436,7 +436,9 @@
 
   .heroImage {
     order: -1;
+    width: 100%;
     margin-right: 0;
+    flex-direction: column;
   }
 
   .imageFrame {
@@ -513,8 +515,9 @@
   }
 
   .imageFrame {
-    width: 250px;
-    height: 350px;
+    width: min(250px, calc(100vw - 48px));
+    height: auto;
+    aspect-ratio: 5 / 7;
   }
 
   .socialIcon {
