@@ -14,7 +14,7 @@ export const allProjects: Project[] = [
   {
     id: 1,
     title: "Application de Prédiction du Diabète",
-    description: "Application web multilingue ...",
+    description: "Application web multilingue de prédiction du risque de diabète à l’aide d’algorithmes de Machine Learning. Elle analyse des données médicales et présente les résultats de façon claire. Elle propose aussi la visualisation des résultats, l’export de rapports PDF et des recommandations personnalisées.",
     fullDescription: `Cette application utilise des algorithmes de Machine Learning pour prédire le risque de diabète chez les patients. L'interface est disponible en plusieurs langues et permet aux professionnels de santé d'obtenir des résultats précis en temps réel.
 
 Les fonctionnalités incluent : analyse de données médicales, visualisation des résultats, export de rapports PDF, et système de recommandations personnalisées.`,
@@ -28,13 +28,15 @@ Les fonctionnalités incluent : analyse de données médicales, visualisation de
       "/assets/projects/diabete/5.webp" // ← Nouvelle photo 4
     ],
     githubLink: "https://github.com/votreusername/diabetes",
-    category: "fullstack"
+    category: "fullstack, ai, backend"
   },
   {
     id: 2,
     title: "Système de Gestion de Pharmacie",
-    description: "Application complète ...",
-    fullDescription: `Système complet de gestion de pharmacie développé avec React et Node.js. Cette application permet la gestion des stocks de médicaments, des ventes, des fournisseurs et des clients.`,
+    description: "Application de gestion de pharmacie développée avec React, Node.js et Oracle. Elle permet de gérer les médicaments, les stocks, les ventes, les fournisseurs et les clients. Des traitements PL/SQL et des triggers automatisent certaines tâches et appliquent des règles métier en base de données.",
+    fullDescription: `Application full-stack de gestion de pharmacie développée avec React et TypeScript pour l’interface, Node.js pour la logique serveur et Oracle pour la base de données. Elle centralise la gestion des médicaments, des stocks, des ventes, des fournisseurs et des clients.
+
+La couche base de données s’appuie sur PL/SQL pour automatiser certaines tâches de gestion. Des triggers exécutent des traitements lors d’opérations en base et contribuent à appliquer les règles métier ainsi qu’à maintenir la cohérence des données.`,
     technologies: ["React", "Node.js", "Oracle", "PL/SQL", "TypeScript"],
     image: "/assets/projects/pharmacie/1.webp",
     gallery: [
@@ -45,12 +47,12 @@ Les fonctionnalités incluent : analyse de données médicales, visualisation de
       "/assets/projects/pharmacie/5.webp",
       "/assets/projects/pharmacie/6.webp"
     ],
-    category: "fullstack"
+    category: "fullstack, backend"
   },
   {
     id: 3,
     title: "Application de Location de Voitures",
-    description: "Application desktop ...",
+    description: "Application desktop développée en Java Swing pour la gestion d’une agence de location de voitures. Elle regroupe les fonctionnalités de gestion dans une interface dédiée. Les données sont stockées dans MS Access, avec une connexion assurée par JDBC.",
     fullDescription: `Application desktop développée en Java Swing pour la gestion complète d'une agence de location de voitures.`,
     technologies: ["Java","Swing","MS Access","JDBC"],
     image: "/assets/projects/location/1.webp",
@@ -69,29 +71,13 @@ Les fonctionnalités incluent : analyse de données médicales, visualisation de
       "/assets/projects/location/13.webp",   // ← Nouvelles photos
       "/assets/projects/location/14.webp"
     ],
-    category: "fullstack"
+    category: "fullstack, backend"
   },
+  
   {
-    id: 4,
-    title: "Plateforme Bureautique Web",
-    description: "Site web complet ...",
-    fullDescription: `Plateforme web complète pour la gestion bureautique d'une entreprise.`,
-    technologies: ["HTML","CSS","JavaScript","PHP","MySQL"],
-    image: "/assets/projects/bureautique/1.webp",
-    gallery: [
-      "/assets/projects/bureautique/1.webp",  
-      "/assets/projects/bureautique/2.webp",
-      "/assets/projects/bureautique/3.webp", 
-      "/assets/projects/bureautique/4.webp",
-      "/assets/projects/bureautique/5.webp",
-      "/assets/projects/bureautique/6.webp"
-    ],
-    category: "fullstack"
-  },
-  {
-      id: 5,
+      id: 4,
       title: "Quich'Art — Site Vitrine & Commande",
-      description: "Site web pour une pâtisserie artisanale à Fès — tartelettes sucrées et salées.",
+      description: "Site vitrine et de commande conçu pour Quich’Art, une pâtisserie artisanale de Fès spécialisée dans les tartelettes sucrées et salées. Il présente les produits et les créations dans des galeries interactives, avec filtres par catégorie. Les clients peuvent passer commande ou envoyer une demande personnalisée via WhatsApp.",
       fullDescription: `Site web complet pour Quich'Art, une pâtisserie artisanale basée à Fès.
     Le site inclut une galerie de produits avec filtres dynamiques, un système de commande avec panier, une page de création  présentant les réalisations de Quich'Art en  catégories, chaque catégorie dispose d'une galerie photo interactive avec navigation par flèches. Un formulaire de demande personnalisée permet au client de décrire son projet et de l'envoyer directement via WhatsApp , et une intégration WhatsApp pour les commandes. Design premium avec mode dark/light.`,
       technologies: ["React", "Vite", "Tailwind CSS", "Framer Motion", "React Router DOM"],
@@ -107,12 +93,28 @@ Les fonctionnalités incluent : analyse de données médicales, visualisation de
         "/assets/projects/quichart/8.webp",
       ],
       githubLink: "https://github.com/zinebchaq/quichart",
-      category: "fullstack"
+      category: "frontend"
     },
+
+    {
+    id: 5,
+    title: "Stage PFA ALTEN — Application Full-Stack & Sécurité",
+    description: "Stage PFA chez ALTEN Maroc consacré à la sécurisation d’une application full-stack à trois niveaux (.NET Core, Angular et SQL Server). Les travaux comprennent l’authentification JWT, le hachage PBKDF2 et le contrôle d’accès RBAC à quatre rôles. Des audits SAST/DAST ont aussi contribué au traitement de vulnérabilités et à l’ajout d’une limitation du débit des requêtes.",
+    fullDescription: `Projet réalisé dans le cadre d’un stage PFA chez ALTEN Maroc. Contribution à la sécurisation des accès aux données d’une application full-stack organisée en trois tiers, ainsi qu’au développement et à la correction de code au sein d’une équipe utilisant Git.
+
+Les travaux de sécurité comprennent l’authentification JWT sur HTTPS/TLS, le hachage des mots de passe avec PBKDF2 et le contrôle d’accès RBAC à quatre rôles. Des audits SAST/DAST avec Snyk et OWASP ZAP ont permis de traiter des vulnérabilités telles que XSS et SQLi, et d’intégrer une limitation du débit des requêtes.`,
+    technologies: [".NET Core", "Angular", "SQL Server", "JWT", "HTTPS/TLS", "PBKDF2", "RBAC", "Snyk", "OWASP ZAP"],
+    image: "/assets/projects/alten_pfa_sparks/accueil.jpg",
+    gallery: ["/assets/projects/alten_pfa_sparks/accueil.jpg", 
+       "/assets/projects/alten_pfa_sparks/count_locked.png", 
+       "/assets/projects/alten_pfa_sparks/invalid_mail_mdp.png", 
+       "/assets/projects/alten_pfa_sparks/xss.png"],
+    category: "sécurité, backend"
+  },
     {
         id: 6,
         title: "CarLocation — Application Android de Location de Voitures",
-        description: "Application mobile Android de gestion complète d'une agence de location de voitures : véhicules, clients, réservations et paiements.",
+        description: "Application Android de gestion d’une agence de location de voitures, développée en Java. Elle propose des espaces adaptés à l’administrateur, à l’employé et au client, et permet de gérer les véhicules, les clients, les réservations et les paiements. Basée sur SQLite, elle fonctionne hors ligne.",
         fullDescription: `Application mobile Android développée en Java sous Android Studio, dédiée à la gestion complète d'une agence de location de voitures fictive appelée CarLocation.
           L'application propose trois profils utilisateurs distincts : l'administrateur dispose d'un accès complet à toutes les fonctionnalités, l'employé peut gérer les réservations et les paiements, et le client peut consulter les véhicules disponibles et effectuer des demandes de réservation.
           Les fonctionnalités principales incluent : gestion du parc automobile avec mise à jour automatique de la disponibilité, gestion des fiches clients, création et suivi des réservations avec un cycle de statuts (En attente → Confirmée → Terminée / Annulée), détection automatique des chevauchements de dates, encaissement des paiements avec choix du mode (espèces, carte, virement), historique complet des transactions, et notifications système en temps réel pour chaque événement (nouvelle réservation, confirmation, annulation, paiement).
@@ -139,7 +141,7 @@ Les fonctionnalités incluent : analyse de données médicales, visualisation de
       {
     id: 7,
     title: "AI Resume Screening & Job Matching",
-    description: "Système intelligent de classification automatique de CVs et matching sémantique avec offres d'emploi, développé avec TF-IDF + SVM, Sentence-BERT et LLaMA3.",
+    description: "Système intelligent de tri de CV et de rapprochement sémantique avec des offres d’emploi. Il classe les CV dans des catégories professionnelles et compare leurs compétences aux exigences des offres. Le projet combine TF-IDF + SVM, Sentence-BERT et LLaMA3.",
     fullDescription: `Système complet de classification et de matching de CVs développé dans le cadre du module Deep Learning & NLP à l'ENSA de Fès.
 
 Le système propose deux fonctionnalités principales : la classification automatique d'un CV dans sa catégorie professionnelle (24 catégories) via un modèle TF-IDF + SVM enrichi d'un score hybride triple, et le matching sémantique entre un CV et une offre d'emploi via Sentence-BERT et la similarité cosinus.
@@ -156,6 +158,25 @@ Deux modèles ont été comparés : DistilBERT fine-tuné (81.29% d'accuracy) et
       "/assets/projects/cv_matching/4.webp",
     ],
     githubLink: "https://github.com/zinebchaq/resume-matching-ai",
-    category: "ai"
-  }
+    category: "ai, backend"
+  },
+  
+
+  {
+    id: 8,
+    title: "Plateforme Bureautique Web",
+    description: "Plateforme web de gestion bureautique conçue pour une entreprise. Elle associe HTML, CSS et JavaScript pour l’interface, PHP pour la partie serveur et MySQL pour les données. Elle regroupe dans un même site les fonctionnalités de gestion bureautique du projet.",
+    fullDescription: `Plateforme web complète pour la gestion bureautique d'une entreprise.`,
+    technologies: ["HTML","CSS","JavaScript","PHP","MySQL"],
+    image: "/assets/projects/bureautique/1.webp",
+    gallery: [
+      "/assets/projects/bureautique/1.webp",  
+      "/assets/projects/bureautique/2.webp",
+      "/assets/projects/bureautique/3.webp", 
+      "/assets/projects/bureautique/4.webp",
+      "/assets/projects/bureautique/5.webp",
+      "/assets/projects/bureautique/6.webp"
+    ],
+    category: "fullstack, backend"
+  },
 ];

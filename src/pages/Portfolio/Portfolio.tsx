@@ -14,11 +14,15 @@ const Portfolio = () => {
     { id: 'backend', label: 'Backend' },
     { id: 'fullstack', label: 'Fullstack' },
     { id: 'mobile', label: 'Mobile' },
+    { id: 'sécurité', label: 'Sécurité' },
+    { id: 'ai', label: 'IA' },
   ];
 
   const filteredProjects = filter === 'all' 
     ? allProjects 
-    : allProjects.filter(project => project.category === filter);
+    : allProjects.filter(project =>
+        project.category.split(',').map(category => category.trim()).includes(filter)
+      );
 
   return (
     <div className={styles.portfolioPage}>
