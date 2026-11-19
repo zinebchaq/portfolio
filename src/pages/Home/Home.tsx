@@ -68,7 +68,7 @@ const Home = () => {
           <div className={styles.heroImage}>
             <div className={styles.imageFrame}>
               <img 
-                src="/assets/profile-photo.jpg" 
+                src="/assets/profile-photo.webp" 
                 alt="Zineb Chaqchaq" 
                 className={styles.profilePhoto}
               />
