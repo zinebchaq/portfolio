@@ -35,10 +35,12 @@ const Home = () => {
               Bonjour, je m'appelle <span className={styles.highlight}>Zineb Chaqchaq</span>.
             </h1>
             <p className={styles.heroSubtitle}>
-              Étudiante ingénieure en 4ème année à l'ENSA Fès, spécialisée en Intelligence 
-              Artificielle et Confiance Numérique. Passionnée par le développement d'applications 
-              web innovantes et l'intégration de solutions Machine Learning. Je conçois des 
-              expériences numériques performantes alliant technologie et créativité.
+              Étudiante ingénieure en 5ème année à l’ENSA Fès, spécialisée en{' '}
+              <strong>Informatique, Intelligence Artificielle et Confiance Numérique (3IACN)</strong>.
+              {' '}Passionnée par le développement d’applications web et l’intégration de solutions
+              d’intelligence artificielle, je m’intéresse également à la sécurité des applications
+              et à la protection des systèmes numériques. J’aime concevoir des solutions innovantes,
+              alliant performance, fonctionnalité et sécurité.
             </p>
             
             <div className={styles.heroButtons}>
